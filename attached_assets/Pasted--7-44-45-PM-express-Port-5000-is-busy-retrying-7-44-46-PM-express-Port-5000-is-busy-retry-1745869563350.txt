@@ -1,0 +1,69 @@
+
+7:44:45 PM [express] Port 5000 is busy, retrying...
+7:44:46 PM [express] Port 5000 is busy, retrying...
+MongoDB connected successfully
+Error:   Failed to scan for dependencies from entries:
+  /home/runner/workspace/client/index.html
+
+  ✘ [ERROR] The symbol "meetings" has already been declared
+
+    client/src/pages/admin/Dashboard.tsx:125:8:
+      125 │   const [meetings, setMeetings] = useState([]);
+          ╵         ^
+
+  The symbol "meetings" was originally declared here:
+
+    client/src/pages/admin/Dashboard.tsx:47:8:
+      47 │   const [meetings, setMeetings] = useState([]);
+         ╵         ^
+
+
+✘ [ERROR] The symbol "setMeetings" has already been declared
+
+    client/src/pages/admin/Dashboard.tsx:125:8:
+      125 │   const [meetings, setMeetings] = useState([]);
+          ╵         ^
+
+  The symbol "setMeetings" was originally declared here:
+
+    client/src/pages/admin/Dashboard.tsx:47:8:
+      47 │   const [meetings, setMeetings] = useState([]);
+         ╵         ^
+
+
+✘ [ERROR] The symbol "fetchMeetings" has already been declared
+
+    client/src/pages/admin/Dashboard.tsx:131:8:
+      131 │   const fetchMeetings = async () => {
+          ╵         ~~~~~~~~~~~~~
+
+  The symbol "fetchMeetings" was originally declared here:
+
+    client/src/pages/admin/Dashboard.tsx:53:8:
+      53 │   const fetchMeetings = async () => {
+         ╵         ~~~~~~~~~~~~~
+
+
+✘ [ERROR] The symbol "handleMeetingStatus" has already been declared
+
+    client/src/pages/admin/Dashboard.tsx:141:8:
+      141 │   const handleMeetingStatus = async (id: string, status: 'approve...
+          ╵         ~~~~~~~~~~~~~~~~~~~
+
+  The symbol "handleMeetingStatus" was originally declared here:
+
+    client/src/pages/admin/Dashboard.tsx:63:8:
+      63 │   const handleMeetingStatus = async (id, status) => {
+         ╵         ~~~~~~~~~~~~~~~~~~~
+
+
+    at failureErrorWithLog (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+    at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1315:45)
+    at buildResponseToResult (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:943:7)
+    at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:955:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:954:54)
+    at handleRequest (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:647:17)
+    at handleIncomingPacket (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:672:7)
+    at Socket.readFromStdout (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)
